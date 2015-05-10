@@ -111,19 +111,24 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
             }
         } else {
             Ui.requestUpdate();
-            var vibe = [new Attn.VibeProfile(  50, 125 ),
-                        new Attn.VibeProfile( 100, 125 ),
-                        new Attn.VibeProfile(  50, 125 ),
-                        new Attn.VibeProfile( 100, 125 )];
-            Attn.vibrate(vibe);
-             
-            // removed because vivoactive crashes
-            //Attn.playTone(Attn.TONE_TIME_ALERT); // 12
+            alert();
         }
     }
     
     function reachedZero() {
         m_timerReachedZero = true;
+        //alert();
+    }
+    
+    function alert() {
+        var vibe = [new Attn.VibeProfile(  50, 125 ),
+                    new Attn.VibeProfile( 100, 125 ),
+                    new Attn.VibeProfile(  50, 125 ),
+                    new Attn.VibeProfile( 100, 125 )];
+        Attn.vibrate(vibe);
+         
+        // removed because vivoactive crashes
+        //Attn.playTone(Attn.TONE_TIME_ALERT); // 12
     }
     
     function resetTimer() {

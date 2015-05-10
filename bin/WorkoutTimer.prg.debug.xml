@@ -49,50 +49,51 @@
 <entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="110" pc="268436542" symbol="timerCallback"/>
 <entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="113" pc="268436560" symbol="timerCallback"/>
 <entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="114" pc="268436576" symbol="timerCallback"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="118" pc="268436760" symbol="timerCallback"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="126" pc="268436781" symbol="reachedZero"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="130" pc="268436794" symbol="resetTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="131" pc="268436812" symbol="resetTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="132" pc="268436822" symbol="resetTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="133" pc="268436832" symbol="resetTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="134" pc="268436848" symbol="resetTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="135" pc="268436858" symbol="resetTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="143" pc="268436878" symbol="onMenuItem"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="144" pc="268436889" symbol="onMenuItem"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="146" pc="268436920" symbol="onMenuItem"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="148" pc="268436951" symbol="onMenuItem"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="150" pc="268436982" symbol="onMenuItem"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="152" pc="268437013" symbol="onMenuItem"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="153" pc="268437049" symbol="onMenuItem"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="154" pc="268437091" symbol="onMenuItem"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="155" pc="268437119" symbol="onMenuItem"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="161" pc="268437177" symbol="setTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="162" pc="268437195" symbol="setTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="163" pc="268437205" symbol="setTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="164" pc="268437215" symbol="setTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="165" pc="268437225" symbol="setTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="166" pc="268437241" symbol="setTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="167" pc="268437251" symbol="setTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="173" pc="268437271" symbol="onNumberPicked"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="178" pc="268437297" symbol="setCustomTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="179" pc="268437315" symbol="setCustomTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="180" pc="268437325" symbol="setCustomTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="181" pc="268437335" symbol="setCustomTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="182" pc="268437345" symbol="setCustomTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="183" pc="268437361" symbol="setCustomTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="184" pc="268437371" symbol="setCustomTimer"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="8" pc="268437579" symbol="&lt;init&gt;"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="9" pc="268437589" symbol="&lt;init&gt;"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="11" pc="268437599" symbol="&lt;init&gt;"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="12" pc="268437615" symbol="&lt;init&gt;"/>
-<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimer.mc" lineNum="22" pc="268437397" symbol="getInitialView"/>
-<entry filename="Rez" lineNum="5" pc="268437734" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="13" pc="268437468" symbol="initialize"/>
-<entry filename="Rez" lineNum="14" pc="268437490" symbol="initialize"/>
-<entry filename="Rez" lineNum="15" pc="268437512" symbol="initialize"/>
-<entry filename="Rez" lineNum="16" pc="268437534" symbol="initialize"/>
-<entry filename="Rez" lineNum="17" pc="268437556" symbol="initialize"/>
-<entry filename="Rez" lineNum="24" pc="268437702" symbol="&lt;init&gt;"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="119" pc="268436591" symbol="reachedZero"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="124" pc="268436604" symbol="alert"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="128" pc="268436788" symbol="alert"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="135" pc="268436809" symbol="resetTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="136" pc="268436827" symbol="resetTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="137" pc="268436837" symbol="resetTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="138" pc="268436847" symbol="resetTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="139" pc="268436863" symbol="resetTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="140" pc="268436873" symbol="resetTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="148" pc="268436893" symbol="onMenuItem"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="149" pc="268436904" symbol="onMenuItem"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="151" pc="268436935" symbol="onMenuItem"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="153" pc="268436966" symbol="onMenuItem"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="155" pc="268436997" symbol="onMenuItem"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="157" pc="268437028" symbol="onMenuItem"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="158" pc="268437064" symbol="onMenuItem"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="159" pc="268437106" symbol="onMenuItem"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="160" pc="268437134" symbol="onMenuItem"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="166" pc="268437192" symbol="setTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="167" pc="268437210" symbol="setTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="168" pc="268437220" symbol="setTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="169" pc="268437230" symbol="setTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="170" pc="268437240" symbol="setTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="171" pc="268437256" symbol="setTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="172" pc="268437266" symbol="setTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="178" pc="268437286" symbol="onNumberPicked"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="183" pc="268437312" symbol="setCustomTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="184" pc="268437330" symbol="setCustomTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="185" pc="268437340" symbol="setCustomTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="186" pc="268437350" symbol="setCustomTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="187" pc="268437360" symbol="setCustomTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="188" pc="268437376" symbol="setCustomTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="189" pc="268437386" symbol="setCustomTimer"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="8" pc="268437594" symbol="&lt;init&gt;"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="9" pc="268437604" symbol="&lt;init&gt;"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="11" pc="268437614" symbol="&lt;init&gt;"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimerUi.mc" lineNum="12" pc="268437630" symbol="&lt;init&gt;"/>
+<entry filename="U:\\svn\\connectiq\\WorkoutTimer\\source\\WorkoutTimer.mc" lineNum="22" pc="268437412" symbol="getInitialView"/>
+<entry filename="Rez" lineNum="5" pc="268437749" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="13" pc="268437483" symbol="initialize"/>
+<entry filename="Rez" lineNum="14" pc="268437505" symbol="initialize"/>
+<entry filename="Rez" lineNum="15" pc="268437527" symbol="initialize"/>
+<entry filename="Rez" lineNum="16" pc="268437549" symbol="initialize"/>
+<entry filename="Rez" lineNum="17" pc="268437571" symbol="initialize"/>
+<entry filename="Rez" lineNum="24" pc="268437717" symbol="&lt;init&gt;"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8389359" symbol="&lt;gre&gt;"/>
@@ -133,6 +134,7 @@
 <entry id="8388662" method="true" symbol="testContinue"/>
 <entry field="true" id="8389149" symbol="restingHeartRate"/>
 <entry id="8388644" module="true" symbol="System"/>
+<entry id="22" method="true" symbol="alert"/>
 <entry field="true" id="8388876" symbol="SUB_SPORT_CARDIO_TRAINING"/>
 <entry id="19" method="true" symbol="startStop"/>
 <entry field="true" id="8389443" symbol="WEIGHT_SCALE_GENDER_MALE"/>
@@ -140,7 +142,7 @@
 <entry id="8389548" symbol="&lt;tha&gt;"/>
 <entry field="true" id="8388807" symbol="BLE_REQUEST_TOO_LARGE"/>
 <entry id="8388819" method="true" symbol="makeImageRequest"/>
-<entry id="23" module="true" symbol="Menus"/>
+<entry id="24" module="true" symbol="Menus"/>
 <entry id="3" module="true" symbol="globals_Rez_Drawables"/>
 <entry id="8388630" module="true" symbol="Toybox_Position"/>
 <entry id="8389354" symbol="&lt;dut&gt;"/>
@@ -156,7 +158,7 @@
 <entry field="true" id="8389155" symbol="FONT_MEDIUM"/>
 <entry id="8388663" method="true" symbol="testAdd"/>
 <entry id="8389119" method="true" symbol="getDirection"/>
-<entry id="28" method="true" symbol="setTimer"/>
+<entry id="29" method="true" symbol="setTimer"/>
 <entry field="true" id="8389475" symbol="rightPedalSmoothness"/>
 <entry id="8389101" method="true" symbol="onSwipe"/>
 <entry id="8389247" symbol="measurementType"/>
@@ -187,10 +189,10 @@
 <entry id="8388659" method="true" symbol="testAbs"/>
 <entry field="true" id="8388989" symbol="dutyCycle"/>
 <entry id="8389043" object="true" symbol="ProgressBar"/>
-<entry field="true" id="27" symbol="AppName"/>
+<entry field="true" id="28" symbol="AppName"/>
 <entry field="true" id="8388927" symbol="SECONDS_PER_YEAR"/>
 <entry id="8389418" object="true" symbol="CommonData"/>
-<entry id="34" symbol="item_custom"/>
+<entry id="35" symbol="item_custom"/>
 <entry id="8389114" method="true" symbol="getType"/>
 <entry field="true" id="8389427" symbol="BIKE_POWER_SENSOR_TYPE_POWER_ONLY"/>
 <entry id="8389032" object="true" symbol="ConfirmationDelegate"/>
@@ -204,7 +206,7 @@
 <entry id="8389184" method="true" symbol="drawLine"/>
 <entry id="8389250" symbol="timestamp"/>
 <entry id="8388877" method="true" symbol="createSession"/>
-<entry field="true" id="25" symbol="LauncherIcon"/>
+<entry field="true" id="26" symbol="LauncherIcon"/>
 <entry id="8388616" module="true" symbol="Toybox_Communications"/>
 <entry field="true" id="8389380" symbol="OBSCURE_TOP"/>
 <entry field="true" id="8389201" symbol="MSG_ID_SEARCH_TIMEOUT"/>
@@ -313,7 +315,7 @@
 <entry id="8389142" method="true" symbol="getProfile"/>
 <entry id="8389188" method="true" symbol="fillRectangle"/>
 <entry id="8388729" object="true" symbol="Info"/>
-<entry id="24" module="true" symbol="Layouts"/>
+<entry id="25" module="true" symbol="Layouts"/>
 <entry id="8388710" object="true" symbol="Stats"/>
 <entry field="true" id="8389152" symbol="FONT_XTINY"/>
 <entry id="8389189" method="true" symbol="fillRoundedRectangle"/>
@@ -525,7 +527,7 @@
 <entry field="true" id="8388875" symbol="SUB_SPORT_INDOOR_SKIING"/>
 <entry field="true" id="8389270" symbol="messagePeriod"/>
 <entry field="true" id="8389426" symbol="BIKE_POWER_SENSOR_TYPE_NONE"/>
-<entry id="22" method="true" symbol="resetTimer"/>
+<entry id="23" method="true" symbol="resetTimer"/>
 <entry id="8389350" module="true" symbol="globals"/>
 <entry field="true" id="8389015" symbol="SWIPE_UP"/>
 <entry field="true" id="8389530" symbol="userProfileExchangeSupport"/>
@@ -693,12 +695,12 @@
 <entry field="true" id="8389012" symbol="CLICK_TYPE_HOLD"/>
 <entry field="true" id="8389229" symbol="NETWORK_PUBLIC"/>
 <entry id="8389053" object="true" symbol="BitmapResource"/>
-<entry id="29" method="true" symbol="setCustomTimer"/>
+<entry id="30" method="true" symbol="setCustomTimer"/>
 <entry field="true" id="8388982" symbol="TONE_POWER"/>
 <entry field="true" id="8388842" symbol="SPORT_CROSS_COUNTRY_SKIING"/>
 <entry field="true" id="8389310" symbol="position"/>
 <entry id="8388633" module="true" symbol="ActivityMonitor"/>
-<entry id="26" object="true" symbol="WorkoutTimerMenu"/>
+<entry id="27" object="true" symbol="WorkoutTimerMenu"/>
 <entry id="8389249" symbol="thresholdConfiguration"/>
 <entry id="8389100" method="true" symbol="onRelease"/>
 <entry id="8388709" object="true" symbol="ClockTime"/>
@@ -883,7 +885,7 @@
 <entry id="8388658" method="true" symbol="testSubstringAndFind"/>
 <entry id="8389488" symbol="DEVICE_TYPE_WEIGHT_SCALE"/>
 <entry id="8389179" method="true" symbol="drawEllipse"/>
-<entry id="32" symbol="item_90"/>
+<entry id="33" symbol="item_90"/>
 <entry field="true" id="8389379" symbol="OBSCURE_LEFT"/>
 <entry id="8388820" object="true" symbol="MailboxIterator"/>
 <entry field="true" id="8388917" symbol="FORMAT_SHORT"/>
@@ -936,7 +938,7 @@
 <entry id="8388758" object="true" symbol="Number"/>
 <entry field="true" id="8389213" symbol="MSG_ID_ACKNOWLEDGED_DATA"/>
 <entry field="true" id="8389224" symbol="MSG_CODE_CHANNEL_IN_WRONG_STATE"/>
-<entry id="31" symbol="item_60"/>
+<entry id="32" symbol="item_60"/>
 <entry field="true" id="8389221" symbol="MSG_CODE_EVENT_TRANSFER_TX_FAILED"/>
 <entry id="8389309" method="true" symbol="toGeoString"/>
 <entry id="8388690" method="true" symbol="testMoment"/>
@@ -997,7 +999,7 @@
 <entry field="true" id="8389422" symbol="DEVICE_STATE_TRACKING"/>
 <entry field="true" id="8388795" method="true" symbol="length"/>
 <entry id="8388718" method="true" symbol="error"/>
-<entry id="30" symbol="item_30"/>
+<entry id="31" symbol="item_30"/>
 <entry id="8388817" method="true" symbol="makeJsonRequest"/>
 <entry id="8388683" method="true" symbol="testLog"/>
 <entry field="true" id="8388913" symbol="stepGoal"/>
@@ -1013,7 +1015,7 @@
 <entry field="true" id="12" symbol="m_timerCount"/>
 <entry id="8389131" method="true" symbol="setColor"/>
 <entry id="8389091" symbol="mItems"/>
-<entry id="33" symbol="item_120"/>
+<entry id="34" symbol="item_120"/>
 <entry id="8389288" method="true" symbol="validateProperty"/>
 <entry id="8388881" method="true" symbol="isRecording"/>
 <entry id="8389346" symbol="text"/>
@@ -1085,6 +1087,9 @@
 <documentation/>
 </functionEntry>
 <functionEntry name="reachedZero">
+<documentation/>
+</functionEntry>
+<functionEntry name="alert">
 <documentation/>
 </functionEntry>
 <functionEntry name="resetTimer">
