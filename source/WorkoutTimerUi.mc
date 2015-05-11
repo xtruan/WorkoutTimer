@@ -74,9 +74,15 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
         return true;
     }
     
-    function onTap(click) {
-        //System.println(click.getCoordinates());
+    function onTap(evt) {
+        //System.println(evt.getCoordinates());
         startStop();
+    }
+    
+    function onHold() {
+        var vibe = [new Attn.VibeProfile(  50, 100 )];
+        Attn.vibrate(vibe);
+        resetTimer();
     }
     
     function onKey(key) {
@@ -85,6 +91,8 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
             startStop();
         } else if (key.getKey() == Ui.KEY_UP) {
             onMenu();
+        } else if (key.getKey() == Ui.KEY_DOWN) {
+            resetTimer();
         }
     }
     
@@ -117,7 +125,7 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
     
     function reachedZero() {
         m_timerReachedZero = true;
-        //alert();
+        alert();
     }
     
     function alert() {
