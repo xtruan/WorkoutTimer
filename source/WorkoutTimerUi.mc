@@ -161,6 +161,10 @@ class WorkoutTimerMenuDelegate extends Ui.MenuInputDelegate {
             setTimer(90);
         } else if (item == :item_120) {
             setTimer(120);
+        } else if (item == :item_300) {
+            setTimer(300);
+        } else if (item == :item_1800) {
+            setTimer(1800);
         } else if (item == :item_custom) {
             var customDuration = Cal.duration( {:minutes=>1} );
             var customTimePicker = new Ui.NumberPicker(Ui.NUMBER_PICKER_TIME_MIN_SEC, customDuration);

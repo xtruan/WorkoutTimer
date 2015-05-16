@@ -3,5 +3,7 @@
     <menu-item id="item_60">1:00</menu-item>
     <menu-item id="item_90">1:30</menu-item>
     <menu-item id="item_120">2:00</menu-item>
+    <menu-item id="item_300">5:00</menu-item>
+    <menu-item id="item_1800">30:00</menu-item>
     <menu-item id="item_custom">Custom</menu-item>
 </menu>
