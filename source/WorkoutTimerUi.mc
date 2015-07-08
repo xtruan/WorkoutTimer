@@ -10,6 +10,7 @@ var m_timerReachedZero = false;
 var m_timerDefaultCount = 60;
 var m_timerCount = m_timerDefaultCount;
 var m_invertColors = false;
+var m_repeat = false;
 
 class WorkoutTimerView extends Ui.View
 {
@@ -54,6 +55,9 @@ class WorkoutTimerView extends Ui.View
             m_invertColors = !m_invertColors;
         } else if (!m_timerRunning) {
             dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) + 45, Gfx.FONT_MEDIUM, "PAUSED", Gfx.TEXT_JUSTIFY_CENTER );
+        } else if (m_repeat) {
+            dc.setColor( Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT );
+            dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) + 45, Gfx.FONT_MEDIUM, "REPEAT ON", Gfx.TEXT_JUSTIFY_CENTER );
         }
     }
 
@@ -69,7 +73,7 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
             resetTimer();
         }
         var menu = new Rez.Menus.WorkoutTimerMenu();
-        menu.setTitle("Set Time");
+        menu.setTitle("Setup");
         Ui.pushView(menu, new WorkoutTimerMenuDelegate(), Ui.SLIDE_IMMEDIATE);
         return true;
     }
@@ -113,18 +117,26 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
     function timerCallback() {
         if (!m_timerReachedZero) {
             m_timerCount -= 1;
-            Ui.requestUpdate();
             if (m_timerCount == 0) {
                 reachedZero();
+            } else  {
+                Ui.requestUpdate();
             }
         } else {
-            Ui.requestUpdate();
-            alert();
+            if (m_repeat) {
+                resetTimer();
+                startStop();
+            } else {
+                Ui.requestUpdate();
+                alert();
+            }
         }
     }
     
     function reachedZero() {
         m_timerReachedZero = true;
+        m_invertColors = true;
+        Ui.requestUpdate();
         alert();
     }
     
@@ -171,6 +183,8 @@ class WorkoutTimerMenuDelegate extends Ui.MenuInputDelegate {
             Ui.popView(Ui.SLIDE_IMMEDIATE);
             Ui.pushView(customTimePicker, new CustomTimePickerDelegate(), Ui.SLIDE_IMMEDIATE);
             //Ui.switchToView(customTimePicker, new CustomTimePickerDelegate(), Ui.SLIDE_IMMEDIATE);
+        } else if (item == :item_repeat) {
+            toggleRepeat();
         }
     }
     
@@ -182,6 +196,10 @@ class WorkoutTimerMenuDelegate extends Ui.MenuInputDelegate {
         m_timerCount = m_timerDefaultCount;
         m_invertColors = false;
         Ui.requestUpdate();
+    }
+    
+    function toggleRepeat() {
+        m_repeat = !m_repeat;
     }
 }
 

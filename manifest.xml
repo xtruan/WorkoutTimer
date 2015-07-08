@@ -9,6 +9,7 @@
             <iq:product id="epix"/>
             <iq:product id="fr920xt"/>
             <iq:product id="fenix3"/>
+            <iq:product id="d2bravo"/>
         </iq:products>
 
         <iq:permissions>
