@@ -1,9 +1,3 @@
-//!
-//! Copyright 2015 by Garmin Ltd. or its subsidiaries.
-//! Subject to Garmin SDK License Agreement and Wearables
-//! Application Developer Agreement.
-//!
-
 using Toybox.Application as App;
 using Toybox.WatchUi as Ui;
 

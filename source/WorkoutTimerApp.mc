@@ -4,6 +4,7 @@ using Toybox.Timer as Timer;
 using Toybox.Attention as Attn;
 using Toybox.Time.Gregorian as Cal;
 
+// inits
 var m_timer;
 var m_timerRunning = false;
 var m_timerReachedZero = false;
@@ -37,6 +38,7 @@ class WorkoutTimerView extends Ui.View
             string = "" + min + ":0" + sec;
         }
         
+        // flip foreground and background colors based on invert colors boolean
         if (!m_invertColors) {
             dc.setColor( Gfx.COLOR_TRANSPARENT, Gfx.COLOR_BLACK );
         } else {
@@ -48,8 +50,11 @@ class WorkoutTimerView extends Ui.View
         } else {
             dc.setColor( Gfx.COLOR_BLACK, Gfx.COLOR_TRANSPARENT );
         }
+
+        // display time
         dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) - 60, Gfx.FONT_NUMBER_THAI_HOT, string, Gfx.TEXT_JUSTIFY_CENTER );
         
+        // display status
         if (m_timerReachedZero) {
             dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) + 45, Gfx.FONT_MEDIUM, "COMPLETE", Gfx.TEXT_JUSTIFY_CENTER );
             m_invertColors = !m_invertColors;
@@ -78,11 +83,13 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
         return true;
     }
     
+    // tap to start/stop timer
     function onTap(evt) {
         //System.println(evt.getCoordinates());
         startStop();
     }
     
+    // hold to reset timer
     function onHold() {
         var vibe = [new Attn.VibeProfile(  50, 100 )];
         Attn.vibrate(vibe);
@@ -206,7 +213,6 @@ class WorkoutTimerMenuDelegate extends Ui.MenuInputDelegate {
 class CustomTimePickerDelegate extends Ui.NumberPickerDelegate {
     function onNumberPicked(value) {
         setCustomTimer(value.value());
-        //System.println(value.value());
     }
     
     function setCustomTimer(time) {
