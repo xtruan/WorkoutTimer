@@ -1,3 +1,4 @@
+using Toybox.Application as App;
 using Toybox.WatchUi as Ui;
 using Toybox.Graphics as Gfx;
 using Toybox.Timer as Timer;
@@ -6,19 +7,25 @@ using Toybox.Time.Gregorian as Cal;
 
 // inits
 var m_timer;
+var m_timerDefaultCount;
+var m_timerCount;
 var m_timerRunning = false;
 var m_timerReachedZero = false;
-var m_timerDefaultCount = 60;
-var m_timerCount = m_timerDefaultCount;
 var m_invertColors = false;
-var m_repeat = false;
+var m_repeat;
 
 class WorkoutTimerView extends Ui.View
 {
 
     function onLayout(dc)
     {
+        // init timer
         m_timer = new Timer.Timer();
+        // load default timer count
+        m_timerDefaultCount = App.getApp().getDefaultTimerCount();
+        m_timerCount = m_timerDefaultCount;
+        // load default repeat state
+        m_repeat = App.getApp().getRepeat();
     }
 
     function onUpdate(dc)
@@ -200,6 +207,7 @@ class WorkoutTimerMenuDelegate extends Ui.MenuInputDelegate {
         m_timerReachedZero = false;
         m_timerRunning = false;
         m_timerDefaultCount = time;
+        App.getApp().setDefaultTimerCount(m_timerDefaultCount); // save new default to properties     
         m_timerCount = m_timerDefaultCount;
         m_invertColors = false;
         Ui.requestUpdate();
@@ -207,6 +215,7 @@ class WorkoutTimerMenuDelegate extends Ui.MenuInputDelegate {
     
     function toggleRepeat() {
         m_repeat = !m_repeat;
+        App.getApp().setRepeat(m_repeat); // save new repeat state to properties
     }
 }
 
@@ -220,6 +229,7 @@ class CustomTimePickerDelegate extends Ui.NumberPickerDelegate {
         m_timerReachedZero = false;
         m_timerRunning = false;
         m_timerDefaultCount = time;
+        App.getApp().setDefaultTimerCount(m_timerDefaultCount); // save new default to properties
         m_timerCount = m_timerDefaultCount;
         m_invertColors = false;
         Ui.requestUpdate();
