@@ -11,6 +11,7 @@ Usage:
 Make sure vibration is enabled to make the most of this app!
 
 Changelog:
+* 1.6 - Saving default timer count and default repeat state between app launches
 * 1.5 - Added a "Repeat" function to the menu that automatically restarts the timer when it gets to zero (based on the suggestion of k800ben and baders71), added D2 Bravo support
 * 1.4 - Timer color inverts at exactly zero instead of zero minus one second
 * 1.3 - Added permanent 5 min and 30 min timers (based on the suggestion of Ricardo76512)
