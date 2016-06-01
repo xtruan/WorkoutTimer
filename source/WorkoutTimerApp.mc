@@ -1,11 +1,13 @@
 using Toybox.Application as App;
+using Toybox.System as Sys;
 using Toybox.WatchUi as Ui;
 using Toybox.Graphics as Gfx;
 using Toybox.Timer as Timer;
 using Toybox.Attention as Attn;
 using Toybox.Time.Gregorian as Cal;
+using Toybox.Time as Time;
 
-// inits
+// globals
 var m_timer;
 var m_timerDefaultCount;
 var m_timerCount;
@@ -13,31 +15,22 @@ var m_timerRunning = false;
 var m_timerReachedZero = false;
 var m_invertColors = false;
 var m_repeat;
+var m_savedClockMins;
 
 class WorkoutTimerView extends Ui.View
 {
-
-    function onLayout(dc)
-    {
-        // init timer
-        m_timer = new Timer.Timer();
-        // load default timer count
-        m_timerDefaultCount = App.getApp().getDefaultTimerCount();
-        m_timerCount = m_timerDefaultCount;
-        // load default repeat state
-        m_repeat = App.getApp().getRepeat();
-    }
-
     function onUpdate(dc)
     {
         var min = 0;
         var sec = m_timerCount;
         
+        // convert secs to mins and secs
         while (sec > 59) {
             min += 1;
             sec -= 60;
         }
     
+        // make the secs pretty (heh heh)
         var string;
         if (sec > 9) {
             string = "" + min + ":" + sec;
@@ -59,27 +52,55 @@ class WorkoutTimerView extends Ui.View
         }
 
         // display time
-        dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) - 60, Gfx.FONT_NUMBER_THAI_HOT, string, Gfx.TEXT_JUSTIFY_CENTER );
+        dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2), Gfx.FONT_NUMBER_THAI_HOT, string, Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER );
         
         // display status
         if (m_timerReachedZero) {
-            dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) + 45, Gfx.FONT_MEDIUM, "COMPLETE", Gfx.TEXT_JUSTIFY_CENTER );
+            dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) + 58, Gfx.FONT_MEDIUM, "COMPLETE", Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER );
             m_invertColors = !m_invertColors;
         } else if (!m_timerRunning) {
-            dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) + 45, Gfx.FONT_MEDIUM, "PAUSED", Gfx.TEXT_JUSTIFY_CENTER );
+            dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) + 58, Gfx.FONT_MEDIUM, "PAUSED", Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER );
         } else if (m_repeat) {
             dc.setColor( Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT );
-            dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) + 45, Gfx.FONT_MEDIUM, "REPEAT ON", Gfx.TEXT_JUSTIFY_CENTER );
+            dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) + 58, Gfx.FONT_MEDIUM, "REPEAT ON", Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER );
         }
+        dc.setColor( Gfx.COLOR_LT_GRAY, Gfx.COLOR_TRANSPARENT );
+        dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) - 58, Gfx.FONT_MEDIUM, getClockTime(), Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER );
+    }
+    
+    function getClockTime() {
+        var clockTime = Sys.getClockTime();
+        var hours = clockTime.hour;
+        if (!Sys.getDeviceSettings().is24Hour) {
+            if (hours > 12) {
+                hours = hours - 12;
+            }
+        }
+        var timeString = Lang.format("$1$:$2$", [hours.format("%02d"), clockTime.min.format("%02d")]);
+        return timeString;
     }
 
 }
 
 class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
 
+    // ctor
+    function initialize() {
+        // init timer
+        m_timer = new Timer.Timer();
+        // load default timer count
+        m_timerDefaultCount = App.getApp().getDefaultTimerCount();
+        m_timerCount = m_timerDefaultCount;
+        // load default repeat state
+        m_repeat = App.getApp().getRepeat();
+        // save off current clock minutes
+        m_savedClockMins = Sys.getClockTime().min;
+        // start timer
+        m_timer.start( method(:timerCallback), 1000, true );
+    }
+
     function onMenu() {
         if (!m_timerReachedZero) {
-            m_timer.stop();
             m_timerRunning = false;
         } else {
             resetTimer();
@@ -92,7 +113,6 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
     
     // tap to start/stop timer
     function onTap(evt) {
-        //System.println(evt.getCoordinates());
         startStop();
     }
     
@@ -104,7 +124,6 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
     }
     
     function onKey(key) {
-        //System.println(key.getKey());
         if (key.getKey() == Ui.KEY_ENTER) {
             startStop();
         } else if (key.getKey() == Ui.KEY_UP) {
@@ -117,9 +136,9 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
     function startStop() {
         Ui.requestUpdate();
         if (!m_timerReachedZero) {
-            if (m_timerRunning) {
+            if (!m_timerRunning) {
+                // reset timer so the user doesn't only get a partial second to start
                 m_timer.stop();
-            } else {
                 m_timer.start( method(:timerCallback), 1000, true );
             }
             m_timerRunning = !m_timerRunning;
@@ -129,14 +148,26 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
     }
     
     function timerCallback() {
-        if (!m_timerReachedZero) {
-            m_timerCount -= 1;
-            if (m_timerCount == 0) {
-                reachedZero();
-            } else  {
+        if (!m_timerRunning) {
+            // state 1: timer is not running
+            // refresh the UI only if the minute has changed
+            if (m_savedClockMins != Sys.getClockTime().min) {
+                m_savedClockMins = Sys.getClockTime().min;
                 Ui.requestUpdate();
             }
+        } else if (!m_timerReachedZero) {
+            // state 2: timer is running
+            // decrement the timer until zero, refreshing the UI each time
+            // when zero is reached, trigger alerts
+            m_timerCount -= 1;
+            if (m_timerCount > 0) {
+                Ui.requestUpdate();
+            } else  {
+                reachedZero();
+            }
         } else {
+            // state 3: timer has completed
+            // repeat or alert based on user configuration
             if (m_repeat) {
                 resetTimer();
                 startStop();
@@ -166,7 +197,6 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
     }
     
     function resetTimer() {
-        m_timer.stop();
         m_timerReachedZero = false;
         m_timerRunning = false;
         m_timerCount = m_timerDefaultCount;
@@ -203,7 +233,6 @@ class WorkoutTimerMenuDelegate extends Ui.MenuInputDelegate {
     }
     
     function setTimer(time) {
-        m_timer.stop();
         m_timerReachedZero = false;
         m_timerRunning = false;
         m_timerDefaultCount = time;
@@ -225,7 +254,6 @@ class CustomTimePickerDelegate extends Ui.NumberPickerDelegate {
     }
     
     function setCustomTimer(time) {
-        m_timer.stop();
         m_timerReachedZero = false;
         m_timerRunning = false;
         m_timerDefaultCount = time;

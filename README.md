@@ -12,6 +12,7 @@ Usage:
 Make sure vibration is enabled to make the most of this app!
 
 Changelog:
+* 2.0 - Added clock time as header and cleaned up layout
 * 1.8 - Added support for vivoactive HR and Forerunner 735XT
 * 1.7 - Adding support for Forerunner 230, Forerunner 235, and Forerunner 630
 * 1.6 - Saving default timer count and default repeat state between app launches
