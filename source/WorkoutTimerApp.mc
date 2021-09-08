@@ -63,13 +63,13 @@ class WorkoutTimerView extends Ui.View
         
         // display status
         if (m_timerReachedZero) {
-            dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) + 45, Gfx.FONT_MEDIUM, "COMPLETE", Gfx.TEXT_JUSTIFY_CENTER );
+            dc.drawText( (dc.getWidth() / 2), 2 * (dc.getHeight() / 3) + 10, Gfx.FONT_MEDIUM, "COMPLETE", Gfx.TEXT_JUSTIFY_CENTER );
             m_invertColors = !m_invertColors;
         } else if (!m_timerRunning) {
-            dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) + 45, Gfx.FONT_MEDIUM, "PAUSED", Gfx.TEXT_JUSTIFY_CENTER );
+            dc.drawText( (dc.getWidth() / 2), 2 * (dc.getHeight() / 3) + 10, Gfx.FONT_MEDIUM, "PAUSED", Gfx.TEXT_JUSTIFY_CENTER );
         } else if (m_repeat) {
             dc.setColor( Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT );
-            dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) + 45, Gfx.FONT_MEDIUM, "REPEAT ON", Gfx.TEXT_JUSTIFY_CENTER );
+            dc.drawText( (dc.getWidth() / 2), 2 * (dc.getHeight() / 3) + 10, Gfx.FONT_MEDIUM, "REPEAT ON", Gfx.TEXT_JUSTIFY_CENTER );
         }
     }
 
@@ -97,7 +97,7 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
     }
     
     // hold to reset timer
-    function onHold() {
+    function onHold(evt) {
         var vibe = [new Attn.VibeProfile(  50, 100 )];
         Attn.vibrate(vibe);
         resetTimer();

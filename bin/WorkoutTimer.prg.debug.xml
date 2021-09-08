@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\S\ws\WorkoutTimer\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="3" lineNum="7" pc="268435456" symbol="getDefaultTimerCount"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="3" lineNum="8" pc="268435460" symbol="getDefaultTimerCount"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="3" lineNum="9" pc="268435478" symbol="getDefaultTimerCount"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="3" lineNum="10" pc="268435485" symbol="getDefaultTimerCount"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="3" lineNum="12" pc="268435491" symbol="getDefaultTimerCount"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="4" lineNum="17" pc="268435498" symbol="setDefaultTimerCount"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="4" lineNum="18" pc="268435502" symbol="setDefaultTimerCount"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="5" lineNum="22" pc="268435522" symbol="getRepeat"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="5" lineNum="23" pc="268435526" symbol="getRepeat"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="5" lineNum="24" pc="268435544" symbol="getRepeat"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="5" lineNum="25" pc="268435551" symbol="getRepeat"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="5" lineNum="27" pc="268435557" symbol="getRepeat"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="6" lineNum="32" pc="268435561" symbol="setRepeat"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="6" lineNum="33" pc="268435565" symbol="setRepeat"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="7" lineNum="37" pc="268435585" symbol="onStart"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="8" lineNum="41" pc="268435590" symbol="onStop"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="9" lineNum="45" pc="268435595" symbol="getInitialView"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="9" lineNum="46" pc="268435599" symbol="getInitialView"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimer.mc" id="9" lineNum="4" pc="268438535" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="11" lineNum="20" pc="268435670" symbol="onLayout"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="11" lineNum="23" pc="268435674" symbol="onLayout"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="11" lineNum="25" pc="268435708" symbol="onLayout"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="11" lineNum="26" pc="268435740" symbol="onLayout"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="11" lineNum="28" pc="268435756" symbol="onLayout"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="31" pc="268435789" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="33" pc="268435793" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="34" pc="268435800" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="36" pc="268435810" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="37" pc="268435821" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="38" pc="268435831" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="41" pc="268435844" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="42" pc="268435844" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="43" pc="268435855" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="45" pc="268435877" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="49" pc="268435896" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="50" pc="268435908" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="52" pc="268435947" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="54" pc="268435983" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="55" pc="268435995" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="56" pc="268436007" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="58" pc="268436046" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="62" pc="268436082" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="65" pc="268436160" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="66" pc="268436171" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="67" pc="268436258" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="68" pc="268436278" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="69" pc="268436290" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="70" pc="268436380" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="71" pc="268436391" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="72" pc="268436427" symbol="onUpdate"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="12" lineNum="17" pc="268438516" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="14" lineNum="80" pc="268436521" symbol="onMenu"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="14" lineNum="81" pc="268436525" symbol="onMenu"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="14" lineNum="82" pc="268436537" symbol="onMenu"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="14" lineNum="83" pc="268436555" symbol="onMenu"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="14" lineNum="85" pc="268436568" symbol="onMenu"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="14" lineNum="87" pc="268436580" symbol="onMenu"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="14" lineNum="88" pc="268436616" symbol="onMenu"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="14" lineNum="89" pc="268436633" symbol="onMenu"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="14" lineNum="90" pc="268436685" symbol="onMenu"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="15" lineNum="94" pc="268436689" symbol="onTap"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="15" lineNum="96" pc="268436693" symbol="onTap"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="16" lineNum="100" pc="268436706" symbol="onHold"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="16" lineNum="101" pc="268436710" symbol="onHold"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="16" lineNum="102" pc="268436762" symbol="onHold"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="16" lineNum="103" pc="268436780" symbol="onHold"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="17" lineNum="106" pc="268436793" symbol="onKey"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="17" lineNum="108" pc="268436797" symbol="onKey"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="17" lineNum="109" pc="268436824" symbol="onKey"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="17" lineNum="110" pc="268436839" symbol="onKey"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="17" lineNum="111" pc="268436866" symbol="onKey"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="17" lineNum="112" pc="268436881" symbol="onKey"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="17" lineNum="113" pc="268436908" symbol="onKey"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="18" lineNum="117" pc="268436924" symbol="startStop"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="18" lineNum="118" pc="268436928" symbol="startStop"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="18" lineNum="119" pc="268436944" symbol="startStop"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="18" lineNum="120" pc="268436956" symbol="startStop"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="18" lineNum="121" pc="268436967" symbol="startStop"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="18" lineNum="123" pc="268436988" symbol="startStop"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="18" lineNum="125" pc="268437029" symbol="startStop"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="18" lineNum="127" pc="268437049" symbol="startStop"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="19" lineNum="131" pc="268437062" symbol="timerCallback"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="19" lineNum="132" pc="268437066" symbol="timerCallback"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="19" lineNum="133" pc="268437078" symbol="timerCallback"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="19" lineNum="134" pc="268437097" symbol="timerCallback"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="19" lineNum="135" pc="268437114" symbol="timerCallback"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="19" lineNum="137" pc="268437129" symbol="timerCallback"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="19" lineNum="140" pc="268437148" symbol="timerCallback"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="19" lineNum="141" pc="268437159" symbol="timerCallback"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="19" lineNum="142" pc="268437171" symbol="timerCallback"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="19" lineNum="144" pc="268437186" symbol="timerCallback"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="19" lineNum="145" pc="268437202" symbol="timerCallback"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="20" lineNum="150" pc="268437215" symbol="reachedZero"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="20" lineNum="151" pc="268437219" symbol="reachedZero"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="20" lineNum="152" pc="268437229" symbol="reachedZero"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="20" lineNum="153" pc="268437239" symbol="reachedZero"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="20" lineNum="154" pc="268437255" symbol="reachedZero"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="21" lineNum="157" pc="268437268" symbol="alert"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="21" lineNum="158" pc="268437272" symbol="alert"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="21" lineNum="162" pc="268437456" symbol="alert"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="22" lineNum="168" pc="268437475" symbol="resetTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="22" lineNum="169" pc="268437479" symbol="resetTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="22" lineNum="170" pc="268437497" symbol="resetTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="22" lineNum="171" pc="268437507" symbol="resetTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="22" lineNum="172" pc="268437517" symbol="resetTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="22" lineNum="173" pc="268437533" symbol="resetTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="22" lineNum="174" pc="268437543" symbol="resetTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="22" lineNum="78" pc="268438497" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="181" pc="268437563" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="182" pc="268437567" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="183" pc="268437578" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="184" pc="268437598" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="185" pc="268437609" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="186" pc="268437629" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="187" pc="268437640" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="188" pc="268437660" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="189" pc="268437671" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="190" pc="268437691" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="191" pc="268437702" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="192" pc="268437722" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="193" pc="268437733" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="194" pc="268437753" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="195" pc="268437764" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="196" pc="268437800" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="197" pc="268437842" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="198" pc="268437870" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="200" pc="268437925" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="24" lineNum="201" pc="268437936" symbol="onMenuItem"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="25" lineNum="205" pc="268437952" symbol="setTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="25" lineNum="206" pc="268437956" symbol="setTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="25" lineNum="207" pc="268437974" symbol="setTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="25" lineNum="208" pc="268437984" symbol="setTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="25" lineNum="209" pc="268437994" symbol="setTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="25" lineNum="210" pc="268438004" symbol="setTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="25" lineNum="211" pc="268438037" symbol="setTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="25" lineNum="212" pc="268438053" symbol="setTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="25" lineNum="213" pc="268438063" symbol="setTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="26" lineNum="216" pc="268438080" symbol="toggleRepeat"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="26" lineNum="217" pc="268438084" symbol="toggleRepeat"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="26" lineNum="218" pc="268438101" symbol="toggleRepeat"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="26" lineNum="179" pc="268438603" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="28" lineNum="223" pc="268438138" symbol="onNumberPicked"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="28" lineNum="224" pc="268438142" symbol="onNumberPicked"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="29" lineNum="227" pc="268438166" symbol="setCustomTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="29" lineNum="228" pc="268438170" symbol="setCustomTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="29" lineNum="229" pc="268438188" symbol="setCustomTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="29" lineNum="230" pc="268438198" symbol="setCustomTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="29" lineNum="231" pc="268438208" symbol="setCustomTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="29" lineNum="232" pc="268438218" symbol="setCustomTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="29" lineNum="233" pc="268438251" symbol="setCustomTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="29" lineNum="234" pc="268438267" symbol="setCustomTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="29" lineNum="235" pc="268438277" symbol="setCustomTimer"/>
+        <entry filename="C:\\S\\ws\\WorkoutTimer\\source\\WorkoutTimerApp.mc" id="29" lineNum="222" pc="268438622" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="37" lineNum="21" pc="268438297" symbol="initialize"/>
+        <entry filename="Rez" id="37" lineNum="22" pc="268438301" symbol="initialize"/>
+        <entry filename="Rez" id="37" lineNum="23" pc="268438319" symbol="initialize"/>
+        <entry filename="Rez" id="37" lineNum="24" pc="268438341" symbol="initialize"/>
+        <entry filename="Rez" id="37" lineNum="25" pc="268438363" symbol="initialize"/>
+        <entry filename="Rez" id="37" lineNum="26" pc="268438385" symbol="initialize"/>
+        <entry filename="Rez" id="37" lineNum="27" pc="268438407" symbol="initialize"/>
+        <entry filename="Rez" id="37" lineNum="28" pc="268438429" symbol="initialize"/>
+        <entry filename="Rez" id="37" lineNum="29" pc="268438451" symbol="initialize"/>
+        <entry filename="Rez" id="37" lineNum="30" pc="268438473" symbol="initialize"/>
+        <entry filename="Rez" id="37" lineNum="19" pc="268438580" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="38" lineNum="1" pc="268438554" symbol="&lt;init&gt;"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="4" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="24" method="true" symbol="alert"/>
+        <entry id="41" symbol="item_120"/>
+        <entry id="45" symbol="item_repeat"/>
+        <entry id="21" method="true" symbol="startStop"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="43" symbol="item_1800"/>
+        <entry field="true" id="11" symbol="m_timerDefaultCount"/>
+        <entry id="26" method="true" symbol="getDefaultTimerCount"/>
+        <entry field="true" id="13" symbol="m_timerRunning"/>
+        <entry field="true" id="34" symbol="AppName"/>
+        <entry id="8" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389080" method="true" symbol="onMenu"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="29" method="true" symbol="setRepeat"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="14" symbol="m_timerReachedZero"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="31" module="true" symbol="Menus"/>
+        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="20" object="true" symbol="CustomTimePickerDelegate"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="17" object="true" symbol="WorkoutTimerView"/>
+        <entry id="28" method="true" symbol="getRepeat"/>
+        <entry id="8389098" method="true" symbol="onTap"/>
+        <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="27" method="true" symbol="setDefaultTimerCount"/>
+        <entry id="44" symbol="item_custom"/>
+        <entry field="true" id="15" symbol="m_invertColors"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="22" method="true" symbol="timerCallback"/>
+        <entry id="8389102" method="true" symbol="onNumberPicked"/>
+        <entry id="33" object="true" symbol="WorkoutTimerMenu"/>
+        <entry id="19" object="true" symbol="WorkoutTimerMenuDelegate"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="10" symbol="m_timer"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry field="true" id="32" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="35" method="true" symbol="setTimer"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="40" symbol="item_90"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="39" symbol="item_60"/>
+        <entry id="38" symbol="item_30"/>
+        <entry field="true" id="16" symbol="m_repeat"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="12" symbol="m_timerCount"/>
+        <entry id="8389109" method="true" symbol="onMenuItem"/>
+        <entry id="36" method="true" symbol="toggleRepeat"/>
+        <entry id="8389097" method="true" symbol="onKey"/>
+        <entry id="42" symbol="item_300"/>
+        <entry id="9" object="true" symbol="WorkoutTimer"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="30" module="true" symbol="Layouts"/>
+        <entry id="8389343" symbol="minutes"/>
+        <entry id="18" object="true" symbol="WorkoutTimerDelegate"/>
+        <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
+        <entry id="37" method="true" symbol="setCustomTimer"/>
+        <entry id="23" method="true" symbol="reachedZero"/>
+        <entry id="8389099" method="true" symbol="onHold"/>
+        <entry id="25" method="true" symbol="resetTimer"/>
+    </symbolTable>
+    <localVars>
+        <entry endPc="268435496" name="time" stackId="1" startPc="268435460"/>
+        <entry arg="true" endPc="268435521" name="time" stackId="1" startPc="268435498"/>
+        <entry endPc="268435559" name="repeat" stackId="1" startPc="268435526"/>
+        <entry arg="true" endPc="268435584" name="repeat" stackId="1" startPc="268435561"/>
+        <entry arg="true" endPc="268435589" name="state" stackId="1" startPc="268435585"/>
+        <entry arg="true" endPc="268435594" name="state" stackId="1" startPc="268435590"/>
+        <entry arg="true" endPc="268435788" name="dc" stackId="1" startPc="268435670"/>
+        <entry endPc="268436516" name="string" stackId="4" startPc="268435793"/>
+        <entry endPc="268436516" name="min" stackId="2" startPc="268435793"/>
+        <entry endPc="268436516" name="sec" stackId="3" startPc="268435793"/>
+        <entry arg="true" endPc="268436517" name="dc" stackId="1" startPc="268435789"/>
+        <entry endPc="268436687" name="menu" stackId="1" startPc="268436525"/>
+        <entry arg="true" endPc="268436705" name="evt" stackId="1" startPc="268436689"/>
+        <entry endPc="268436791" name="vibe" stackId="2" startPc="268436710"/>
+        <entry arg="true" endPc="268436792" name="evt" stackId="1" startPc="268436706"/>
+        <entry arg="true" endPc="268436923" name="key" stackId="1" startPc="268436793"/>
+        <entry endPc="268437473" name="vibe" stackId="1" startPc="268437272"/>
+        <entry endPc="268437921" name="customTimePicker" stackId="3" startPc="268437764"/>
+        <entry endPc="268437921" name="customDuration" stackId="2" startPc="268437764"/>
+        <entry arg="true" endPc="268437951" name="item" stackId="1" startPc="268437563"/>
+        <entry arg="true" endPc="268438079" name="time" stackId="1" startPc="268437952"/>
+        <entry arg="true" endPc="268438165" name="value" stackId="1" startPc="268438138"/>
+        <entry arg="true" endPc="268438293" name="time" stackId="1" startPc="268438166"/>
+    </localVars>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/WorkoutTimerDelegate" offset="230" parentId="globals" symbolId="WorkoutTimerDelegate" type="class"/>
+        <dataEntry label="globals/WorkoutTimerView" offset="349" parentId="globals" symbolId="WorkoutTimerView" type="class"/>
+        <dataEntry label="globals/WorkoutTimer" offset="412" parentId="globals" symbolId="WorkoutTimer" type="class"/>
+        <dataEntry label="globals/Rez" offset="515" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="594" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="633" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Menus/WorkoutTimerMenu" offset="672" parentId="Menus" symbolId="WorkoutTimerMenu" type="class"/>
+        <dataEntry label="globals/Rez/Fonts" offset="719" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="750" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="781" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="812" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/WorkoutTimerMenuDelegate" offset="851" parentId="globals" symbolId="WorkoutTimerMenuDelegate" type="class"/>
+        <dataEntry label="globals/CustomTimePickerDelegate" offset="922" parentId="globals" symbolId="CustomTimePickerDelegate" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" name="getDefaultTimerCount" parent="WorkoutTimer">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="setDefaultTimerCount" parent="WorkoutTimer">
+            <param id="time"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getRepeat" parent="WorkoutTimer">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="setRepeat" parent="WorkoutTimer">
+            <param id="repeat"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStart" parent="WorkoutTimer">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStop" parent="WorkoutTimer">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getInitialView" parent="WorkoutTimer">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onLayout" parent="WorkoutTimerView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onUpdate" parent="WorkoutTimerView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onMenu" parent="WorkoutTimerDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onTap" parent="WorkoutTimerDelegate">
+            <param id="evt"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHold" parent="WorkoutTimerDelegate">
+            <param id="evt"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onKey" parent="WorkoutTimerDelegate">
+            <param id="key"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="startStop" parent="WorkoutTimerDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="timerCallback" parent="WorkoutTimerDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="reachedZero" parent="WorkoutTimerDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="alert" parent="WorkoutTimerDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="resetTimer" parent="WorkoutTimerDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onMenuItem" parent="WorkoutTimerMenuDelegate">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="setTimer" parent="WorkoutTimerMenuDelegate">
+            <param id="time"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="toggleRepeat" parent="WorkoutTimerMenuDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onNumberPicked" parent="CustomTimePickerDelegate">
+            <param id="value"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="setCustomTimer" parent="CustomTimePickerDelegate">
+            <param id="time"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="WorkoutTimerMenu">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>
