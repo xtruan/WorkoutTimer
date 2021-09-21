@@ -15,10 +15,15 @@ var m_timerRunning = false;
 var m_timerReachedZero = false;
 var m_invertColors = false;
 var m_repeat;
+var m_repeatNum;
 var m_savedClockMins;
 
 class WorkoutTimerView extends Ui.View
 {
+	function initialize() {
+		View.initialize();
+	}
+	
     function onUpdate(dc)
     {
         var min = 0;
@@ -38,20 +43,30 @@ class WorkoutTimerView extends Ui.View
             string = "" + min + ":0" + sec;
         }
         
-        // flip foreground and background colors based on invert colors boolean
+        // flip background colors based on invert colors boolean
         if (!m_invertColors) {
             dc.setColor( Gfx.COLOR_TRANSPARENT, Gfx.COLOR_BLACK );
         } else {
             dc.setColor( Gfx.COLOR_TRANSPARENT, Gfx.COLOR_WHITE );
         }
         dc.clear();
+        
+        // display clock
+	    if (!m_invertColors) {
+        	dc.setColor( Gfx.COLOR_LT_GRAY, Gfx.COLOR_TRANSPARENT );
+        } else {
+        	dc.setColor( Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT );
+        }
+        dc.drawText( (dc.getWidth() / 2), Gfx.getFontHeight(Gfx.FONT_MEDIUM), Gfx.FONT_MEDIUM, getClockTime(), Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER );
+        
+        // flip foreground based on invert colors boolean
         if (!m_invertColors) {
             dc.setColor( Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT );
         } else {
             dc.setColor( Gfx.COLOR_BLACK, Gfx.COLOR_TRANSPARENT );
         }
 
-        // display time
+        // display timer
         dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2), Gfx.FONT_NUMBER_THAI_HOT, string, Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER );
         
         // display status
@@ -62,10 +77,8 @@ class WorkoutTimerView extends Ui.View
             dc.drawText( (dc.getWidth() / 2), dc.getHeight() - Gfx.getFontHeight(Gfx.FONT_MEDIUM), Gfx.FONT_MEDIUM, "PAUSED", Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER );
         } else if (m_repeat) {
             dc.setColor( Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT );
-            dc.drawText( (dc.getWidth() / 2), dc.getHeight() - Gfx.getFontHeight(Gfx.FONT_MEDIUM), Gfx.FONT_MEDIUM, "REPEAT ON", Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER );
+            dc.drawText( (dc.getWidth() / 2), dc.getHeight() - Gfx.getFontHeight(Gfx.FONT_MEDIUM), Gfx.FONT_MEDIUM, "REP " + m_repeatNum, Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER );
 	    }
-        dc.setColor( Gfx.COLOR_LT_GRAY, Gfx.COLOR_TRANSPARENT );
-        dc.drawText( (dc.getWidth() / 2), Gfx.getFontHeight(Gfx.FONT_MEDIUM), Gfx.FONT_MEDIUM, getClockTime(), Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER );
     }
     
     function getClockTime() {
@@ -86,6 +99,7 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
 
     // ctor
     function initialize() {
+    	BehaviorDelegate.initialize();
         // init timer
         m_timer = new Timer.Timer();
         // load default timer count
@@ -93,6 +107,7 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
         m_timerCount = m_timerDefaultCount;
         // load default repeat state
         m_repeat = App.getApp().getRepeat();
+        m_repeatNum = 1;
         // save off current clock minutes
         m_savedClockMins = Sys.getClockTime().min;
         // start timer
@@ -118,9 +133,10 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
     
     // hold to reset timer
     function onHold(evt) {
+    	m_repeatNum = 1;
+    	resetTimer();
         var vibe = [new Attn.VibeProfile(  50, 100 )];
         Attn.vibrate(vibe);
-        resetTimer();
     }
     
     function onKey(key) {
@@ -129,7 +145,10 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
         } else if (key.getKey() == Ui.KEY_UP) {
             onMenu();
         } else if (key.getKey() == Ui.KEY_DOWN) {
+        	m_repeatNum = 1;
             resetTimer();
+            var vibe = [new Attn.VibeProfile(  50, 100 )];
+        	Attn.vibrate(vibe);
         }
     }
     
@@ -169,6 +188,7 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
             // state 3: timer has completed
             // repeat or alert based on user configuration
             if (m_repeat) {
+            	m_repeatNum++;
                 resetTimer();
                 startStop();
             } else {
@@ -208,6 +228,10 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
 
 class WorkoutTimerMenuDelegate extends Ui.MenuInputDelegate {
 
+	function initialize() {
+        MenuInputDelegate.initialize();
+    }
+
     function onMenuItem(item) {
         if (item == :item_30) {
             setTimer(30);
@@ -239,6 +263,7 @@ class WorkoutTimerMenuDelegate extends Ui.MenuInputDelegate {
         App.getApp().setDefaultTimerCount(m_timerDefaultCount); // save new default to properties     
         m_timerCount = m_timerDefaultCount;
         m_invertColors = false;
+        m_repeatNum = 1;
         Ui.requestUpdate();
     }
     
@@ -249,6 +274,11 @@ class WorkoutTimerMenuDelegate extends Ui.MenuInputDelegate {
 }
 
 class CustomTimePickerDelegate extends Ui.NumberPickerDelegate {
+	
+	function initialize() {
+        NumberPickerDelegate.initialize();
+    }
+    
     function onNumberPicked(value) {
         setCustomTimer(value.value());
     }

@@ -5,6 +5,7 @@ Countdown timer app for measuring sections of workouts. Useful for measuring res
 
 Usage:
 * Menu soft key or up button to select default countdown time (can choose from 0:30, 1:00, 1:30, 2:00, or Custom)
+    * Custom time only supported on some devices (FR55 is not supported). IQ! when selecting a custom time means it is unsupported.
 * Tap screen or press enter button (start/stop) to start and pause timer
 * Hold screen or press down button to reset timer to selected default
 * "Repeat" option in menu toggles auto-repeat mode
@@ -13,7 +14,8 @@ Make sure vibration is enabled to make the most of this app!
 
 Changelog:
 
-* 3.0 - Added support for MANY more devices! Cleaned up layout to work better on more devices.
+* 3.0.3 - Added "REP #" when repeat is turned on. Added vibe when timer reset. Fixed clock color on limited-color devices.
+* 3.0.0 - Added support for MANY more devices! Cleaned up layout to work better on more devices.
 * 2.0 - Added clock time as header and cleaned up layout
 * 1.8 - Added support for vivoactive HR and Forerunner 735XT
 * 1.7 - Adding support for Forerunner 230, Forerunner 235, and Forerunner 630
