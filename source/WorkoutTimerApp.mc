@@ -156,6 +156,9 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
         Ui.requestUpdate();
         if (!m_timerReachedZero) {
             if (!m_timerRunning) {
+            	// vibe on start
+            	var vibe = [new Attn.VibeProfile(  100, 100 )];
+        		Attn.vibrate(vibe);
                 // reset timer so the user doesn't only get a partial second to start
                 m_timer.stop();
                 m_timer.start( method(:timerCallback), 1000, true );

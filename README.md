@@ -14,6 +14,7 @@ Make sure vibration is enabled to make the most of this app!
 
 Changelog:
 
+* 3.0.4 - Added vibe on timer start.
 * 3.0.3 - Added "REP #" when repeat is turned on. Added vibe when timer reset. Fixed clock color on limited-color devices.
 * 3.0.0 - Added support for MANY more devices! Cleaned up layout to work better on more devices.
 * 2.0 - Added clock time as header and cleaned up layout
