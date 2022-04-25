@@ -5,7 +5,6 @@ Countdown timer app for measuring sections of workouts. Useful for measuring res
 
 Usage:
 * Menu soft key or up button to select default countdown time (can choose from 0:30, 1:00, 1:30, 2:00, or Custom)
-    * Custom time only supported on some devices (FR55 is not supported). IQ! when selecting a custom time means it is unsupported.
 * Tap screen or press enter button (start/stop) to start and pause timer
 * Hold screen or press down button to reset timer to selected default
 * "Repeat" option in menu toggles auto-repeat mode
@@ -14,6 +13,7 @@ Make sure vibration is enabled to make the most of this app!
 
 Changelog:
 
+* 3.1.0 - Fixed issue with custom time, now supported on all devices. Changed storage mode to work with CIQ 4.0.0 and above.
 * 3.0.5 - Added support for additional devices.
 * 3.0.4 - Added vibe on timer start.
 * 3.0.3 - Added "REP #" when repeat is turned on. Added vibe when timer is reset. Fixed clock color on limited-color devices.

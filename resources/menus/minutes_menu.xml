@@ -1,0 +1,14 @@
+<menu id="MinutesMenu">
+    <menu-item id="item_min_00">0</menu-item>
+    <menu-item id="item_min_01">1</menu-item>
+    <menu-item id="item_min_02">2</menu-item>
+    <menu-item id="item_min_03">3</menu-item>
+    <menu-item id="item_min_04">4</menu-item>
+    <menu-item id="item_min_05">5</menu-item>
+    <menu-item id="item_min_10">10</menu-item>
+    <menu-item id="item_min_15">15</menu-item>
+    <menu-item id="item_min_20">20</menu-item>
+    <menu-item id="item_min_30">30</menu-item>
+    <menu-item id="item_min_45">45</menu-item>
+    <menu-item id="item_min_60">60</menu-item>
+</menu>

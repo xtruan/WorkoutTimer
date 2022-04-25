@@ -1,0 +1,14 @@
+<menu id="SecondsMenu">
+    <menu-item id="item_sec_00">00</menu-item>
+    <menu-item id="item_sec_05">05</menu-item>
+    <menu-item id="item_sec_10">10</menu-item>
+    <menu-item id="item_sec_15">15</menu-item>
+    <menu-item id="item_sec_20">20</menu-item>
+    <menu-item id="item_sec_25">25</menu-item>
+    <menu-item id="item_sec_30">30</menu-item>
+    <menu-item id="item_sec_35">35</menu-item>
+    <menu-item id="item_sec_40">40</menu-item>
+    <menu-item id="item_sec_45">45</menu-item>
+    <menu-item id="item_sec_50">50</menu-item>
+    <menu-item id="item_sec_55">55</menu-item>
+</menu>
