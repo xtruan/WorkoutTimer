@@ -1,7 +1,7 @@
 # Workout Timer
 Workout Timer app for Garmin ConnectIQ - https://apps.garmin.com/en-US/apps/1341159e-2ed9-4065-9049-0157b0419e1f
 
-Countdown timer app for measuring sections of workouts. Useful for measuring rest periods between lifting, holding poses in body line work, and many more activities.
+Countdown timer app for measuring sections of workouts. Useful for measuring rest periods between lifting, holding poses in body line work, breathwork, and many more activities.
 
 Usage:
 * Menu soft key or up button to select default countdown time (can choose from 0:30, 1:00, 1:30, 2:00, or Custom)
