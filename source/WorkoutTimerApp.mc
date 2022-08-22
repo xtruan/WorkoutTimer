@@ -18,6 +18,8 @@ var m_repeat;
 var m_repeatNum;
 var m_savedClockMins;
 
+var m_customTimeObj = {};
+
 var m_minutesMenu = 0;
 var m_secondsMenu = 30;
 
@@ -108,6 +110,8 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
         // load default timer count
         m_timerDefaultCount = App.getApp().getDefaultTimerCount();
         m_timerCount = m_timerDefaultCount;
+        m_customTimeObj[:TimerCount] = m_timerDefaultCount;
+        m_customTimeObj[:PickerUpdated] = false;
         // load default repeat state
         m_repeat = App.getApp().getRepeat();
         m_repeatNum = 1;
@@ -173,6 +177,11 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
     }
     
     function timerCallback() {
+    	if (m_customTimeObj[:PickerUpdated]) {
+    		Sys.println("Timer: " + m_customTimeObj[:TimerCount]);
+    		setCustomTimer(m_customTimeObj[:TimerCount]);
+    		m_customTimeObj[:PickerUpdated] = false;
+    	}
         if (!m_timerRunning) {
             // state 1: timer is not running
             // refresh the UI only if the minute has changed
@@ -229,6 +238,16 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
         m_invertColors = false;
         Ui.requestUpdate();
     }
+    
+    function setCustomTimer(time) {
+        m_timerReachedZero = false;
+        m_timerRunning = false;
+        m_timerDefaultCount = time;
+        App.getApp().setDefaultTimerCount(m_timerDefaultCount); // save new default to properties
+        m_timerCount = m_timerDefaultCount;
+        m_invertColors = false;
+        Ui.requestUpdate();
+    }
 
 }
 
@@ -280,8 +299,13 @@ class WorkoutTimerMenuDelegate extends Ui.MenuInputDelegate {
             	Ui.pushView(customTimePicker, new CustomTimePickerDelegate(), Ui.SLIDE_IMMEDIATE);
             	//Ui.switchToView(customTimePicker, new CustomTimePickerDelegate(), Ui.SLIDE_IMMEDIATE);
 			} else {
+				// -- REMOVED BECAUSE BAD UX --
 				// new school devices get to pick via menus
-            	showMinutesMenu();
+            	//showMinutesMenu();
+            	
+            	// new school devices get to pick via the generic picker
+            	Ui.popView(Ui.SLIDE_IMMEDIATE);
+            	var gpd = new GenericPickerDialog(GENERIC_PICKER_Time, "Select Min/Sec", m_customTimeObj, :TimerCount);
             }
             
         } else if (item == :item_repeat) {
@@ -393,16 +417,16 @@ class CustomTimePickerDelegate extends Ui.NumberPickerDelegate {
     }
     
     function onNumberPicked(value) {
-        setCustomTimer(value.value());
+        WorkoutTimerDelegate.setCustomTimer(value.value());
     }
     
-    function setCustomTimer(time) {
-        m_timerReachedZero = false;
-        m_timerRunning = false;
-        m_timerDefaultCount = time;
-        App.getApp().setDefaultTimerCount(m_timerDefaultCount); // save new default to properties
-        m_timerCount = m_timerDefaultCount;
-        m_invertColors = false;
-        Ui.requestUpdate();
-    }
+//    function setCustomTimer(time) {
+//        m_timerReachedZero = false;
+//        m_timerRunning = false;
+//        m_timerDefaultCount = time;
+//        App.getApp().setDefaultTimerCount(m_timerDefaultCount); // save new default to properties
+//        m_timerCount = m_timerDefaultCount;
+//        m_invertColors = false;
+//        Ui.requestUpdate();
+//    }
 }
