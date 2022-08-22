@@ -21,9 +21,11 @@ class NumberFactory extends Ui.PickerFactory
     function getDrawable(item, isSelected)
     {
         return new Ui.Text({:text=>item.toString(),
-                            :color=>Gfx.COLOR_WHITE,
-                            :font=>Gfx.FONT_NUMBER_THAI_HOT,
-                            :justification=>Gfx.TEXT_JUSTIFY_LEFT});
+                            //:color=>Gfx.COLOR_WHITE,
+                            :font=>Gfx.FONT_NUMBER_MEDIUM,
+                            //:justification=>Gfx.TEXT_JUSTIFY_LEFT,
+                            :locX =>Ui.LAYOUT_HALIGN_CENTER,
+                            :locY=>Ui.LAYOUT_VALIGN_CENTER});
     }
     function getSize()
     {
@@ -69,7 +71,7 @@ class MyPickerDelegate extends Ui.PickerDelegate
     
     function onAccept( values )
     {   
-        //Single Value 
+        // Single Value 
         if(values.size() == 1)
         {                   
             _object[_symbol] = values[0]; 
@@ -96,9 +98,14 @@ class GenericPickerDialog
         var value = object[symbol];
         if(mode == GENERIC_PICKER_Number && value instanceof Toybox.Lang.Number)
         {            
-            Ui.pushView(new Ui.Picker({:title=>new Ui.Text({:text=>title}),
-                               :pattern=>[new NumberFactory(100)],
-                               :defaults=>[value]}),
+            Ui.pushView(new Ui.Picker({
+                                :title=>new Ui.Text({
+                                    :text=>title,
+                                    :font=>Gfx.FONT_SMALL,
+                                    :locX=>Ui.LAYOUT_HALIGN_CENTER,
+            				        :locY=>Ui.LAYOUT_VALIGN_CENTER}),
+                                :pattern=>[new NumberFactory(100)],
+                                :defaults=>[value]}),
                 new MyPickerDelegate(mode, object, symbol),
                 Ui.SLIDE_UP );
         }
@@ -111,7 +118,7 @@ class GenericPickerDialog
         
         if(mode == GENERIC_PICKER_Time)
         {            
-            //Duration Object
+            // Duration Object
             if(!(value instanceof Toybox.Lang.Number))
             {                
                 value = value.value();
@@ -123,9 +130,14 @@ class GenericPickerDialog
                 value1 = value / 60;
             }
             value2 = value % 60;            
-            Ui.pushView(new Ui.Picker({:title=>new Ui.Text({:text=>title}),
-                               :pattern=>[new NumberFactory(60), new NumberFactory(60)],
-                               :defaults=>[value1, value2]}),
+            Ui.pushView(new Ui.Picker({
+                                :title=>new Ui.Text({
+                                    :text=>title,
+                                    :font=>Gfx.FONT_SMALL,
+                                    :locX=>Ui.LAYOUT_HALIGN_CENTER,
+            				        :locY=>Ui.LAYOUT_VALIGN_CENTER}),
+                                :pattern=>[new NumberFactory(60), new NumberFactory(60)],
+                                :defaults=>[value1, value2]}),
                 new MyPickerDelegate(mode, object, symbol),
                 Ui.SLIDE_UP );
         }        

@@ -20,9 +20,6 @@ var m_savedClockMins;
 
 var m_customTimeObj = {};
 
-var m_minutesMenu = 0;
-var m_secondsMenu = 30;
-
 class WorkoutTimerView extends Ui.View
 {
 	function initialize() {
@@ -253,20 +250,6 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
 
 class WorkoutTimerMenuDelegate extends Ui.MenuInputDelegate {
 
-	function showMinutesMenu() {
-		var menu = new Rez.Menus.MinutesMenu();
-        menu.setTitle("Minutes");
-        Ui.popView(Ui.SLIDE_IMMEDIATE);
-        Ui.pushView(menu, new WorkoutTimerMenuDelegate(), Ui.SLIDE_IMMEDIATE);
-	}
-	
-	function showSecondsMenu() {
-		var menu = new Rez.Menus.SecondsMenu();
-        menu.setTitle("Seconds");
-        Ui.popView(Ui.SLIDE_IMMEDIATE);
-        Ui.pushView(menu, new WorkoutTimerMenuDelegate(), Ui.SLIDE_IMMEDIATE);
-	}
-
 	function initialize() {
         MenuInputDelegate.initialize();
     }
@@ -299,98 +282,15 @@ class WorkoutTimerMenuDelegate extends Ui.MenuInputDelegate {
             	Ui.pushView(customTimePicker, new CustomTimePickerDelegate(), Ui.SLIDE_IMMEDIATE);
             	//Ui.switchToView(customTimePicker, new CustomTimePickerDelegate(), Ui.SLIDE_IMMEDIATE);
 			} else {
-				// -- REMOVED BECAUSE BAD UX --
-				// new school devices get to pick via menus
-            	//showMinutesMenu();
-            	
             	// new school devices get to pick via the generic picker
             	Ui.popView(Ui.SLIDE_IMMEDIATE);
-            	var gpd = new GenericPickerDialog(GENERIC_PICKER_Time, "Select Min/Sec", m_customTimeObj, :TimerCount);
+            	var gpd = new GenericPickerDialog(GENERIC_PICKER_Time, "Set Timer", m_customTimeObj, :TimerCount);
             }
             
         } else if (item == :item_repeat) {
             toggleRepeat();
         } 
         
-        // handle minutes menu
-        
-        else if (item == :item_min_00) {
-        	m_minutesMenu = 0;
-        	showSecondsMenu();
-        } else if (item == :item_min_01) {
-        	m_minutesMenu = 1;
-        	showSecondsMenu();
-        } else if (item == :item_min_02) {
-        	m_minutesMenu = 2;
-        	showSecondsMenu();
-        } else if (item == :item_min_03) {
-        	m_minutesMenu = 3;
-        	showSecondsMenu();
-        } else if (item == :item_min_04) {
-        	m_minutesMenu = 4;
-        	showSecondsMenu();
-        } else if (item == :item_min_05) {
-        	m_minutesMenu = 5;
-        	showSecondsMenu();
-        } else if (item == :item_min_10) {
-        	m_minutesMenu = 10;
-        	showSecondsMenu();
-        } else if (item == :item_min_15) {
-        	m_minutesMenu = 15;
-        	showSecondsMenu();
-        } else if (item == :item_min_20) {
-        	m_minutesMenu = 20;
-        	showSecondsMenu();
-        } else if (item == :item_min_30) {
-        	m_minutesMenu = 30;
-        	showSecondsMenu();
-        } else if (item == :item_min_45) {
-        	m_minutesMenu = 45;
-        	showSecondsMenu();
-        } else if (item == :item_min_60) {
-        	m_minutesMenu = 60;
-        	showSecondsMenu();
-        }
-        
-        // handle seconds menu
-        
-        else if (item == :item_sec_00) {
-        	m_secondsMenu = 0;
-        	setTimer(m_minutesMenu * 60 + m_secondsMenu);
-        } else if (item == :item_sec_05) {
-        	m_secondsMenu = 5;
-        	setTimer(m_minutesMenu * 60 + m_secondsMenu);
-        } else if (item == :item_sec_10) {
-        	m_secondsMenu = 10;
-        	setTimer(m_minutesMenu * 60 + m_secondsMenu);
-        } else if (item == :item_sec_15) {
-        	m_secondsMenu = 15;
-        	setTimer(m_minutesMenu * 60 + m_secondsMenu);
-        } else if (item == :item_sec_20) {
-        	m_secondsMenu = 20;
-        	setTimer(m_minutesMenu * 60 + m_secondsMenu);
-        } else if (item == :item_sec_25) {
-        	m_secondsMenu = 25;
-        	setTimer(m_minutesMenu * 60 + m_secondsMenu);
-        } else if (item == :item_sec_30) {
-        	m_secondsMenu = 30;
-        	setTimer(m_minutesMenu * 60 + m_secondsMenu);
-        } else if (item == :item_sec_35) {
-        	m_secondsMenu = 35;
-        	setTimer(m_minutesMenu * 60 + m_secondsMenu);
-        } else if (item == :item_sec_40) {
-        	m_secondsMenu = 40;
-        	setTimer(m_minutesMenu * 60 + m_secondsMenu);
-        } else if (item == :item_sec_45) {
-        	m_secondsMenu = 45;
-        	setTimer(m_minutesMenu * 60 + m_secondsMenu);
-        } else if (item == :item_sec_50) {
-        	m_secondsMenu = 50;
-        	setTimer(m_minutesMenu * 60 + m_secondsMenu);
-        } else if (item == :item_sec_55) {
-        	m_secondsMenu = 55;
-        	setTimer(m_minutesMenu * 60 + m_secondsMenu);
-        }
     }
     
     function setTimer(time) {
@@ -420,13 +320,4 @@ class CustomTimePickerDelegate extends Ui.NumberPickerDelegate {
         WorkoutTimerDelegate.setCustomTimer(value.value());
     }
     
-//    function setCustomTimer(time) {
-//        m_timerReachedZero = false;
-//        m_timerRunning = false;
-//        m_timerDefaultCount = time;
-//        App.getApp().setDefaultTimerCount(m_timerDefaultCount); // save new default to properties
-//        m_timerCount = m_timerDefaultCount;
-//        m_invertColors = false;
-//        Ui.requestUpdate();
-//    }
 }
