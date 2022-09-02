@@ -13,6 +13,7 @@ Make sure vibration is enabled to make the most of this app!
 
 Changelog:
 
+* 3.3.0 - Added support for Edge/Handheld devices.
 * 3.2.0 - Enhanced custom time option to allow selecting arbitrary times.
 * 3.1.0 - Fixed issue with custom time, now supported on all devices. Changed storage mode to work with CIQ 4.0.0 and above.
 * 3.0.5 - Added support for additional devices.

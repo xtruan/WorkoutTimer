@@ -6,5 +6,5 @@
     <menu-item id="item_300">5:00</menu-item>
     <menu-item id="item_1800">30:00</menu-item>
     <menu-item id="item_custom">Custom Time</menu-item>
-    <menu-item id="item_repeat">Repeat</menu-item>
+    <menu-item id="item_repeat">Repeat On/Off</menu-item>
 </menu>

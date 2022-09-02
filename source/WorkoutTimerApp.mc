@@ -139,8 +139,10 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
     function onHold(evt) {
     	m_repeatNum = 1;
     	resetTimer();
-        var vibe = [new Attn.VibeProfile(  50, 100 )];
-        Attn.vibrate(vibe);
+    	if (Attn has :VibeProfile) {
+            var vibe = [new Attn.VibeProfile(  50, 100 )];
+            Attn.vibrate(vibe);
+        }
     }
     
     function onKey(key) {
@@ -151,8 +153,10 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
         } else if (key.getKey() == Ui.KEY_DOWN) {
         	m_repeatNum = 1;
             resetTimer();
-            var vibe = [new Attn.VibeProfile(  50, 100 )];
-        	Attn.vibrate(vibe);
+            if (Attn has :VibeProfile) {
+                var vibe = [new Attn.VibeProfile(  50, 100 )];
+        	    Attn.vibrate(vibe);
+        	}
         }
     }
     
@@ -161,8 +165,10 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
         if (!m_timerReachedZero) {
             if (!m_timerRunning) {
             	// vibe on start
-            	var vibe = [new Attn.VibeProfile(  100, 100 )];
-        		Attn.vibrate(vibe);
+            	if (Attn has :VibeProfile) {
+            	    var vibe = [new Attn.VibeProfile(  100, 100 )];
+        		    Attn.vibrate(vibe);
+        		}
                 // reset timer so the user doesn't only get a partial second to start
                 m_timer.stop();
                 m_timer.start( method(:timerCallback), 1000, true );
@@ -218,14 +224,16 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
     }
     
     function alert() {
-        var vibe = [new Attn.VibeProfile(  50, 125 ),
-                    new Attn.VibeProfile( 100, 125 ),
-                    new Attn.VibeProfile(  50, 125 ),
-                    new Attn.VibeProfile( 100, 125 )];
-        Attn.vibrate(vibe);
-         
-        // removed because vivoactive crashes
-        //Attn.playTone(Attn.TONE_TIME_ALERT); // 12
+        if (Attn has :VibeProfile) {
+            var vibe = [new Attn.VibeProfile(  50, 125 ),
+                        new Attn.VibeProfile( 100, 125 ),
+                        new Attn.VibeProfile(  50, 125 ),
+                        new Attn.VibeProfile( 100, 125 )];
+            Attn.vibrate(vibe);
+        }
+        else if (Attn has :playTone) {
+            Attn.playTone(Attn.TONE_TIME_ALERT); // 12
+        }
     }
     
     function resetTimer() {
