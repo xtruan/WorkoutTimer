@@ -133,6 +133,7 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
     // tap to start/stop timer
     function onTap(evt) {
         startStop();
+        return true;
     }
     
     // hold to reset timer
@@ -143,6 +144,7 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
             var vibe = [new Attn.VibeProfile(  50, 100 )];
             Attn.vibrate(vibe);
         }
+        return true;
     }
     
     function onKey(key) {
@@ -158,6 +160,7 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
         	    Attn.vibrate(vibe);
         	}
         }
+        return true;
     }
     
     function startStop() {
@@ -326,6 +329,7 @@ class CustomTimePickerDelegate extends Ui.NumberPickerDelegate {
     
     function onNumberPicked(value) {
         WorkoutTimerDelegate.setCustomTimer(value.value());
+        return true;
     }
     
 }

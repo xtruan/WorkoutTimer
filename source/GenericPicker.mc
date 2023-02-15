@@ -52,6 +52,7 @@ class MyConfirmationDelegate extends Ui.ConfirmationDelegate
     {                
         _object[_symbol] = value == 1;
         _object[:PickerUpdated] = true;
+        return true;
     }    
 }
 
