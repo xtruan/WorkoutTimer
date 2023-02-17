@@ -150,8 +150,10 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
     function onKey(key) {
         if (key.getKey() == Ui.KEY_ENTER) {
             startStop();
+            return true;
         } else if (key.getKey() == Ui.KEY_UP) {
             onMenu();
+            return true;
         } else if (key.getKey() == Ui.KEY_DOWN) {
         	m_repeatNum = 1;
             resetTimer();
@@ -159,8 +161,12 @@ class WorkoutTimerDelegate extends Ui.BehaviorDelegate {
                 var vibe = [new Attn.VibeProfile(  50, 100 )];
         	    Attn.vibrate(vibe);
         	}
+        	return true;
+        } else if (key.getKey() == Ui.KEY_ESC) {
+        	Sys.println("Quitting!");
+        	return false;
         }
-        return true;
+        return false;
     }
     
     function startStop() {
